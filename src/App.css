@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+.App {
+    text-align: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+body {
+    justify-content: center;
+    margin: 2rem;
+    background: linear-gradient(to top, #0acdff, #ff9fb2);
+}
+
+h1 {
+    -webkit-text-stroke: 2px black;
+}
+
+
+
+.countdown {
+    height: 10vh;
+}
+
+.computer-choice {
+    width: 250px;
+}
+
+.player-choice {
+    width: 250px;
+    transform: rotateY(180deg);
+}
+.weapon {
+    font-size: 8rem;
+    color: white;
+    cursor: pointer;
+}
+
+.countdown {
+    height: 1vh;
+    z-index: -1;
+}
+
+.fade-in {
+    opacity: .8;
+    transition: opacity 1.5s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
